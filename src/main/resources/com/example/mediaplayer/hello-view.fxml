@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mediaplayer.HelloController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="800.0" />
+      <Button fx:id="playButton" layoutX="266.0" layoutY="463.0" mnemonicParsing="false" onAction="#play" text="Play" />
+      <Button fx:id="pauseButton" layoutX="345.0" layoutY="463.0" mnemonicParsing="false" onAction="#pause" text="Pause" />
+      <Button fx:id="stopButton" layoutX="437.0" layoutY="463.0" mnemonicParsing="false" onAction="#stop" text="Stop" />
+      <Button fx:id="browseButton" layoutX="26.0" layoutY="463.0" mnemonicParsing="false" onAction="#browse" text="Browse" />
+      <ProgressBar fx:id="progressBar" layoutX="83.0" layoutY="409.0" prefHeight="20.0" prefWidth="634.0" progress="0.0" />
+      <Label fx:id="volume" layoutX="657.0" layoutY="492.0" text="Volume">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Slider fx:id="volumeSlider" layoutX="630.0" layoutY="470.0" value="50.0" />
+   </children>
+</AnchorPane>
